@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>bg.png</file>
+        <file>pen.ico</file>
+        <file>rectangleIcon.ico</file>
+        <file>eraserIcon.png</file>
+        <file>fillRecIcon.png</file>
+        <file>paletteIcon.png</file>
+        <file>undoIcon.ico</file>
+        <file>lineIcon.png</file>
+	<file>emptyCircleIcon.png</file>
+	<file>filledCircleIcon.png</file>
+    </qresource>
+</RCC>

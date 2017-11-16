@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui version="4.0">
+  <class>SE_UINewDialog</class>
+  <widget class="QDialog" name="SE_UINewDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>307</width>
+        <height>146</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>New Menu</string>
+    </property>
+    <widget class="QDialogButtonBox" name="buttonBox">
+      <property name="geometry">
+        <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>281</width>
+          <height>32</height>
+        </rect>
+      </property>
+      <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+        <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>291</width>
+          <height>81</height>
+        </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="3">
+          <widget class="QLabel" name="label_4">
+            <property name="text">
+              <string>Height</string>
+            </property>
+          </widget>
+        </item>
+        <item row="2" column="4">
+          <widget class="QSpinBox" name="spinBoxY"/>
+        </item>
+        <item row="0" column="2" colspan="3">
+          <widget class="QLineEdit" name="fileNameInputBox"/>
+        </item>
+        <item row="0" column="0" colspan="2">
+          <widget class="QLabel" name="label">
+            <property name="text">
+              <string>Name:</string>
+            </property>
+          </widget>
+        </item>
+        <item row="2" column="2">
+          <widget class="QSpinBox" name="spinBoxX"/>
+        </item>
+        <item row="2" column="1">
+          <widget class="QLabel" name="label_3">
+            <property name="text">
+              <string>Width:</string>
+            </property>
+          </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+          <widget class="QLabel" name="label_2">
+            <property name="text">
+              <string>Pixel Size:</string>
+            </property>
+          </widget>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <resources/>
+  <connections>
+    <connection>
+      <sender>buttonBox</sender>
+      <signal>accepted()</signal>
+      <receiver>SE_UINewDialog</receiver>
+      <slot>accept()</slot>
+      <hints>
+        <hint type="sourcelabel">
+          <x>248</x>
+          <y>254</y>
+        </hint>
+        <hint type="destinationlabel">
+          <x>157</x>
+          <y>274</y>
+        </hint>
+      </hints>
+    </connection>
+    <connection>
+      <sender>buttonBox</sender>
+      <signal>rejected()</signal>
+      <receiver>SE_UINewDialog</receiver>
+      <slot>reject()</slot>
+      <hints>
+        <hint type="sourcelabel">
+          <x>316</x>
+          <y>260</y>
+        </hint>
+        <hint type="destinationlabel">
+          <x>286</x>
+          <y>274</y>
+        </hint>
+      </hints>
+    </connection>
+  </connections>
+</ui>
